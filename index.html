@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Web Page</title>
+    <style>
+        body {
+            background-image: url("photos/edo.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .image-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            width: 85%;
+            border: 5px solid white;
+            margin-top: 15px;
+            margin-left:7%;
+        }
+
+        .image-container img {
+            border-radius: 10px;
+            width: 100%; /* Updated width to fill the container */
+            border: 5px solid white;
+            margin-top: 5px;
+        }
+
+        .download-link {
+            background-color: #7DC18C   ;
+            color: white;
+            text-decoration: none;
+            padding: 10px 30px;
+            border-radius: 8px;
+            margin-left:45%;
+            letter-spacing:0.8px;
+            font-weight:500;
+            transition:1s;
+            font-family: Arial;
+
+            }
+
+        .download-link:hover {
+            color: #7DC18C;
+            background-color: white;
+
+        }
+
+        .download-link:active{
+            opacity:0.15;
+
+
+        }
+
+
+         /* Media query for portrait phones */
+         @media (max-width: 767px) {
+            .image-container {
+                width: 100%; /* Set width to fill the screen */
+            }
+
+
+            p {
+                text-align: center; 
+                margin: 10px; 
+                font-size: 30px; 
+            }
+        
+    </style>
+</head>
+<body>
+    <p style="margin-right: 50px; margin-left: 550px; font-size: 40px; margin-top: 0; color: white;">Welcome to Images!</p>
+
+    <img src="photos/htt.jpg" class="image-container">
+    <a href="photos/htt.jpg" download class="download-link">Download </a>
+
+    <img src="photos/sonu.jpg" class="image-container">
+    <a href="photos/sonu.jpg" download class="download-link">Download </a>
+
+    <img src="photos/lo-fi-22.jpg" class="image-container">
+    <a href="photos/lo-fi-22.jpg" download class="download-link">Download</a>
+
+    <img src="photos/lo-fi-02.jpg" class="image-container">
+    <a href="photos/lo-fi-02.jpg" download class="download-link">Download </a>
+
+    <img src="photos/idi.jpg" class="image-container">
+    <a href="photos/idi.jpg" download class="download-link">Download </a>
+
+<img src="photos/bg.jpg" class="image-container">
+<a href="photos/bg.jpg" download class="download-link">Download </a>
+
+<img src="photos/best.jpg" class="image-container" style="width:50% ; height:80%">
+<a href="photos/best.jpg" download class="download-link">Download </a>
+
+
+
+</body>
+</html>
