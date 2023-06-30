@@ -4,7 +4,7 @@
     <title>My Web Page</title>
     <style>
         body {
-            background-image: url("photos/edo.jpg");
+            background-image: url("https://i.imgur.com/Y3Kf8Y6.jpg");
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -18,83 +18,63 @@
             width: 85%;
             border: 5px solid white;
             margin-top: 15px;
-            margin-left:7%;
+            margin-left: 7%;
         }
 
         .image-container img {
             border-radius: 10px;
-            width: 100%; /* Updated width to fill the container */
+            width: 100%;
             border: 5px solid white;
             margin-top: 5px;
         }
 
         .download-link {
-            background-color: #7DC18C   ;
+            background-color: #7DC18C;
             color: white;
             text-decoration: none;
             padding: 10px 30px;
             border-radius: 8px;
-            margin-left:45%;
-            letter-spacing:0.8px;
-            font-weight:500;
-            transition:1s;
+            margin-left: 45%;
+            letter-spacing: 0.8px;
+            font-weight: 500;
+            transition: 1s;
             font-family: Arial;
-
-            }
+        }
 
         .download-link:hover {
             color: #7DC18C;
             background-color: white;
-
         }
 
-        .download-link:active{
-            opacity:0.15;
-
-
+        .download-link:active {
+            opacity: 0.15;
         }
 
-
-         /* Media query for portrait phones */
-         @media (max-width: 767px) {
+        /* Media query for portrait phones */
+        @media (max-width: 767px) {
             .image-container {
-                width: 100%; /* Set width to fill the screen */
+                width: 100%;
             }
-
 
             p {
-                text-align: center; 
-                margin: 10px; 
-                font-size: 30px; 
+                text-align: center;
+                margin: 10px;
+                font-size: 30px;
             }
-        
+        }
     </style>
 </head>
 <body>
     <p style="margin-right: 50px; margin-left: 550px; font-size: 40px; margin-top: 0; color: white;">Welcome to Images!</p>
 
-    <img src="photos/htt.jpg" class="image-container">
-    <a href="photos/htt.jpg" download class="download-link">Download </a>
+    <div class="image-container">
+        <a href="https://i.imgur.com/jciv5dM.jpg" download>
+            <img src="https://i.imgur.com/jciv5dM.jpg" title="source: imgur.com" />
+        </a>
+        <a href="https://www.dropbox.com/s/chftev5f3sd67nn/lo-fi-02.jpg?dl=1" download class="download-link">Download</a>
+    </div>
 
-    <img src="photos/sonu.jpg" class="image-container">
-    <a href="photos/sonu.jpg" download class="download-link">Download </a>
-
-    <img src="photos/lo-fi-22.jpg" class="image-container">
-    <a href="photos/lo-fi-22.jpg" download class="download-link">Download</a>
-
-    <img src="photos/lo-fi-02.jpg" class="image-container">
-    <a href="photos/lo-fi-02.jpg" download class="download-link">Download </a>
-
-    <img src="photos/idi.jpg" class="image-container">
-    <a href="photos/idi.jpg" download class="download-link">Download </a>
-
-<img src="photos/bg.jpg" class="image-container">
-<a href="photos/bg.jpg" download class="download-link">Download </a>
-
-<img src="photos/best.jpg" class="image-container" style="width:50% ; height:80%">
-<a href="photos/best.jpg" download class="download-link">Download </a>
-
-
+    <!-- Add other image and download link combinations -->
 
 </body>
 </html>
