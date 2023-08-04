@@ -165,12 +165,13 @@
           dialogueBox.appendChild(loadingMessage);
 
           // Simulate loading delay
-          setTimeout(function () {
+          var delay = 5000; // 5 seconds
+          var interval = setInterval(function() {
             // Update loading message
             loadingMessage.innerHTML = 'Reading your mind...';
 
-            // Simulate additional loading delay
-            setTimeout(function () {
+            // Stop interval after 2 seconds
+            setTimeout(function() {
               // Clear loading spinner and message
               dialogueBox.innerHTML = '';
 
@@ -184,19 +185,19 @@
               // Display smiling face emojis
               var emojis = document.createElement('div');
               emojis.classList.add('emoji');
-              emojis.innerHTML = '';
+              emojis.innerHTML = '&#129325; &#129325; &#129325;';
 
               // Append emojis to dialogue box
               dialogueBox.appendChild(emojis);
             }, 2000); // Adjust the delay as needed
-          }, 2000); // Adjust the delay as needed
+          }, delay);
         }
       }
     </script>
   </head>
   <body>
     <p class="text">I can Read Your Mind..</p>
-    <p class="note"> <strong class="strong">Note</strong>: This is a very powerful Mind reader. Do it at your own risk.</p>
+    <p class="note"><strong class="strong">Note</strong>: This is a very powerful Mind reader. Do it at your own risk.</p>
     <input id="numberInput" class="input" placeholder="Enter a Number Here" />
     <button class="button" onclick="showNumber()">Submit</button>
     <div id="dialogueBox" class="dialogue-box hidden"></div>
